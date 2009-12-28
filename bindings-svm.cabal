@@ -15,9 +15,6 @@ category:            FFI
 build-type:          Simple
 cabal-version:       >= 1.2.3
 
-extra-source-files:
-  include/svm-extra.h
-
 library
   hs-source-dirs:
     src
@@ -30,12 +27,8 @@ library
     -Wall
   extensions:
     ForeignFunctionInterface
-
-  include-dirs:
-    include
   includes:
     svm.h
-    svm-extra.h
   extra-libraries:
     svm
   pkgconfig-depends:

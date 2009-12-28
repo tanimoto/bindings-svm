@@ -1,12 +1,11 @@
 #include <bindings.dsl.h>
 #include <svm.h>
-#include <svm-extra.h>
 
 module Bindings.SVM where
 #strict_import
 
 -- libsvm_version
--- globalvar libsvm_version, IO CInt
+#globalvar libsvm_version , CInt
 
 -- svm_node
 #starttype struct svm_node
@@ -57,20 +56,8 @@ module Bindings.SVM where
 #field probability , CInt
 #stoptype
 
--- svm_model -- requires svm-extra.h
-#starttype struct svm_model
-#field param , <svm_parameter>
-#field nr_class , CInt
-#field l , CInt
-#field SV , Ptr (Ptr <svm_node>)
-#field sv_coef , Ptr (Ptr CDouble)
-#field rho , Ptr CDouble
-#field probA , Ptr CDouble
-#field probB , Ptr CDouble
-#field label , Ptr CInt
-#field nSV , Ptr CInt
-#field free_sv , CInt
-#stoptype
+-- svm_model
+#opaque_t svm_model
 
 -- training
 #ccall svm_train , Ptr <svm_problem> -> Ptr <svm_parameter> -> IO (Ptr <svm_model>)

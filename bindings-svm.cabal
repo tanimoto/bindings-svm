@@ -8,6 +8,8 @@ license:             BSD3
 license-file:        LICENSE
 author:              Paulo Tanimoto <ptanimoto@gmail.com>
 maintainer:          Paulo Tanimoto <ptanimoto@gmail.com>
+homepage:            http://github.com/tanimoto/bindings-svm
+bug-reports:         http://github.com/tanimoto/bindings-svm/issues
 category:            FFI
 
 build-type:          Simple

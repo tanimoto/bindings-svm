@@ -1,3 +1,9 @@
+{-|
+For a high-level description of the C API, refer to the README file
+included in the libsvm archive, available for download at
+<http://www.csie.ntu.edu.tw/~cjlin/libsvm/>.
+-}
+
 #include <bindings.dsl.h>
 #include <svm.h>
 

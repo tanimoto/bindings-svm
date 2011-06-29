@@ -1,8 +1,19 @@
-{-|
-For a high-level description of the C API, refer to the README file
-included in the libsvm archive, available for download at
-<http://www.csie.ntu.edu.tw/~cjlin/libsvm/>.
--}
+{-# LANGUAGE ForeignFunctionInterface #-}
+
+-------------------------------------------------------------------------------
+-- |
+-- Module     : Bindings.SVM
+-- Copyright  : (c) 2009-2011 Paulo Tanimoto, Ville Tirronen
+-- License    : BSD3
+--
+-- Maintainer : Paulo Tanimoto <ptanimoto@gmail.com>
+--              Ville Tirronen <aleator@gmail.com>
+--
+-------------------------------------------------------------------------------
+
+-- | For a high-level description of the C API, refer to the README file
+-- included in the libsvm archive, available for download at
+-- <http://www.csie.ntu.edu.tw/~cjlin/libsvm/>.
 
 #include <bindings.dsl.h>
 #include <svm.h>

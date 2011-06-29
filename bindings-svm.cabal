@@ -47,7 +47,5 @@ library
     bindings-DSL >= 1.0 && < 1.1
   ghc-options:
     -Wall
-  extensions:
-    ForeignFunctionInterface
   extra-libraries:
     stdc++
